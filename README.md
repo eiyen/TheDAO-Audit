@@ -130,3 +130,13 @@ function withdraw() public {
 ```
 
 通过首先设置 `balances[msg.sender]` 为0，我们确保即使调用者再次调用`withdraw`函数，`amount`也会为0，从而防止重入攻击。
+
+#### 参考资料
+
+1. [与 GPT-4 的聊天记录](https://chat.openai.com/share/4003d7fc-fdaa-4aa2-8300-b0947f67ccef)。
+2. [0x Protocal 的审计文档](https://github.com/trailofbits/publications/blob/master/reviews/0x-protocol.pdf)。
+3. [Solidity By Example 的重入攻击的示例](https://solidity-by-example.org/hacks/re-entrancy/)。
+
+#### 鸣谢
+
+谷歌插件：[Immersive Translate](https://chrome.google.com/webstore/detail/immersive-translate/bpoadfkcbjbfhfodiogcnhhhpibjhbnh)。
